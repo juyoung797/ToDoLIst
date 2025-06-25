@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HelloController {
     @GetMapping("/")
-    public String hello() {
-        return "hello"; // hello.html 찾기
+    public String todolist() {
+        return "to-do-list"; // hello.html 찾기
     }
 
-    @GetMapping("/todolist")
-    public String todolist() {
-        return "to-do-list";
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello";
     }
 }
