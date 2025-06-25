@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDoList</title>
+    <style>
+        @font-face {
+            font-family: 'UhBeepuding';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            background-color: yellowgreen;
+        }
+        li {
+            list-style-type: none;
+        }
+        .white-bg {
+            font-family: UhBeepuding,serif;
+            background-color: white;
+        }
+        #to-do-list {
+            width: 300px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do-List Page</h1>
+    <h1>오늘의 할 일을 완료하셨습니까?</h1>
+    <ul class = "white-bg" id="to-do-list">
+        <h1>오늘의 할 일</h1>
+        <li>
+            <input type="checkbox" id="checkbox-01">
+            <label for="checkbox-01">잔디관리</label>
+        </li>
+        <li>
+            <input type="checkbox" id="checkbox-02">
+            <label for="checkbox-02">코딩</label>
+        </li>
+        <li>
+            <input type="checkbox" id="checkbox-03">
+            <label for="checkbox-03">방식은 똑같다!</label>
+        </li>
+    </ul>
+
+    <script>
+        alert("Hello, j797!")
+    </script>
+</body>
+</html>
