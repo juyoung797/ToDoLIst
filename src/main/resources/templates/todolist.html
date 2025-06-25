@@ -14,42 +14,44 @@
             font-style: normal;
         }
         body {
-            background-color: yellowgreen;
+            background-color:white
+        }
+        h1 {
+            margin: 0;
+        }
+        .post {
+            background-color: yellow;
+            font-family: UhBeepuding,serif;
         }
         li {
             list-style-type: none;
         }
-        .white-bg {
-            font-family: UhBeepuding,serif;
-            background-color: white;
-        }
-        #to-do-list {
-            width: 300px;
-            padding: 15px;
+        .to-do-box {
         }
     </style>
 </head>
 <body>
-    <h1>To-Do-List Page</h1>
     <h1>오늘의 할 일을 완료하셨습니까?</h1>
-    <ul class = "white-bg" id="to-do-list">
+    <div class="post">
         <h1>오늘의 할 일</h1>
-        <li>
-            <input type="checkbox" id="checkbox-01">
-            <label for="checkbox-01">잔디관리</label>
-        </li>
-        <li>
-            <input type="checkbox" id="checkbox-02">
-            <label for="checkbox-02">코딩</label>
-        </li>
-        <li>
-            <input type="checkbox" id="checkbox-03">
-            <label for="checkbox-03">방식은 똑같다!</label>
-        </li>
-    </ul>
+        <ul class="to-do-box" id="to-do-list">
+            <li>
+                <input type="checkbox" id="checkbox-01">
+                <label for="checkbox-01">잔디관리</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkbox-02">
+                <label for="checkbox-02">코딩</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkbox-03">
+                <label for="checkbox-03">방식은 똑같다!</label>
+            </li>
+        </ul>
+    </div>
 
     <script>
-        alert("Hello, j797!")
+        // alert("Hello, j797!")
     </script>
 </body>
 </html>

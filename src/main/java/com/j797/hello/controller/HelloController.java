@@ -6,12 +6,22 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HelloController {
     @GetMapping("/")
-    public String todolist() {
-        return "to-do-list"; // hello.html 찾기
+    public String home() {
+        return "home"; // hello.html 찾기
     }
 
     @GetMapping("/hello")
     public String hello() {
         return "hello";
+    }
+
+    @GetMapping("/todolist")
+    public String todolist() {
+        return "todolist";
+    }
+
+    @GetMapping("/portfolio")
+    public String portfolio() {
+        return "portfolio";
     }
 }
